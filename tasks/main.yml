@@ -1,0 +1,27 @@
+---
+- name: Install necessary packages
+  yum: name={{ item }} state=latest update_cache=yes cache_valid_time=3600
+  with_items:
+    - epel-release
+    - jansson
+    - jansson-devel
+    - graphviz
+    - graphviz-devel
+    - gtk2
+    - gtk2-devel
+    - libxml2
+    - libxml2-devel
+    - libcurl
+    - libcurl-devel
+    - openssl
+    - openssl-devel
+    - readline
+    - readline-devel
+    - libssh2
+    - libssh2-devel
+    - globus-common-devel
+    - globus-gsi-credential-devel
+    - globus-gsi-proxy-core-devel
+    - globus-gssapi-gsi-devel
+    - voms-devel
+
