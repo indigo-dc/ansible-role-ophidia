@@ -26,8 +26,6 @@ Role Variables
 The variables that can be passed to this role and a brief description
 about them are as follows.
 
-
-
 Dependencies
 ------------
 
@@ -80,5 +78,5 @@ LIP and Indigo-DataCloud project
 Acknowledgments
 ---------------
 
-* Ophidia and CMCC
-
+* Ophidia CMCC group
+* Further information can be found at: http://ophidia.cmcc.it/documentation.
