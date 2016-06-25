@@ -42,4 +42,4 @@
   command: ./configure --prefix=/usr/local chdir=/usr/local/ophidia-terminal
 
 - name: Run make install
-  command: make installs chdir=/usr/local/indigo-dc/ophidia-terminal
+  command: make install chdir=/usr/local/ophidia-terminal
