@@ -3,6 +3,8 @@
   yum: name={{ item }} state=latest update_cache=yes
   with_items:
     - epel-release
+    - git
+    - gcc-c++
     - jansson
     - jansson-devel
     - graphviz
@@ -37,7 +39,7 @@
   command: ./bootstrap chdir=/usr/local/ophidia-terminal
 
 - name: Run configure
-  command: "./configure --prefix=/usr/local/bin" chdir=/usr/local/ophidia-terminal
+  command: ./configure --prefix=/usr/local chdir=/usr/local/ophidia-terminal
 
 - name: Run make install
-  command: "make install" chdir=/usr/local/indigo-dc/ophidia-terminal
+  command: make installs chdir=/usr/local/indigo-dc/ophidia-terminal
